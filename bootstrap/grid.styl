@@ -146,8 +146,11 @@
   .col-pull-10 { right: percentage((10/ $grid-columns)); }
   .col-pull-11 { right: percentage((11/ $grid-columns)); }
 
+//STYLUS FIX FOR MEDIA QUERIES
+medium_to_large = "(min-width: " + $screen-desktop + ")"
+
 // Medium and large device columns (desktop and up)
-@media (min-width: $screen-desktop)
+@media medium_to_large
   .container
     max-width: $container-desktop;
 
